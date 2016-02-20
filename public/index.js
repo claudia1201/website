@@ -14,4 +14,6 @@ $(document).on("ready", function(){
         scrollTop: $("#contact-me-container").offset().top
     }, 1000);
   });
+  var email = $("#inputEmail").val();
+  var message = $("#inputMEssage").val();
 })

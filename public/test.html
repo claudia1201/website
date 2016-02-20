@@ -50,23 +50,30 @@
           </div>
       </div><!--.col-sm-12-->
     </div><!--row-->
-    <div class="row">
+    <div class="row box" id="passions-container">
       <div class="col-sm-12">
-        <div id="passions-container">
           <h1>PASSIONS</h1>
           <h2>"Building my dreams through code"</h2>
-          <p>Working on creative and fun projects has always been one of my biggest passions. Always on the look out for the opportunity to get my hands into new technologies</p>
+          <div class="row">
+            <div class="col-sm-6">
+              <p>When I was a kid, I remember technology has always been the engine for my curiosity. Even though I didn't have the means to buy a computer, I was lucky enoguh to be able to have access to computers through my university.
+              I enjoyed learning C++. But I didn't stopped there. The more I dug, the more I wanted to learn. Once I moved to the U.S. I enrolled the Iron Yard (Tech Bootcamp) and that is where I was exposed to more coding languages such us Backbone and Angular JS</p>
+              <p>Working on creative and fun projects has always been one of my biggest passions. Always on the look out for the opportunity to get my hands into new technologies</p>
+            </div>
+            <div class="col-sm-6">
+              <p>I beleive <i>innovation</i> is the keyword for success. With all the variety of frameworks out there, is has become really difficult to choose the one to stick with. But I ask myself, why waste time trying to find <i>The One</i> if we can use all of them?
 
-          <p>Innovation is the keyword for success. Front end development allows me to introduce to the world new ways of </p>
-
-          <p></p>
-        </div>
+              <p>Design has an special place in my heart. A strong UI/UX is crucial for any application.
+              I enjoy working on the design part. I feel this is the way I can communicate to the user all the effort that was put into the application</p>
+            </div>
+          </div>
       </div><!--.col-sm-12-->
     </div><!--row-->
-    <div class="row" id="projects-container">
+    <div class="row box" id="projects-container">
       <div class="col-sm-12">
-        <h3 id="proyect-tittle">Proyects</h3>
-        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <h1 id="proyect-tittle">Projects</h1>
+
+        <div id="carousel-projects" class="carousel slide" data-ride="carousel">
           <!-- Indicators -->
           <ol class="carousel-indicators">
             <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -80,8 +87,9 @@
 
           <!-- Wrapper for slides -->
           <div class="carousel-inner" role="listbox">
+
             <div class="item active">
-              <img src="assets/cnvo.png" alt="CNVO Snapshot">
+              <img src="assets/cnvo.png" alt="CNVO Snapshot"/>
               <div class="carousel-caption">
                 <h3>CNVO</h3>
                 <p>This is a Q&A application. Users can use this plataform to ask and asnwer questions for specific topicsg. The following feature allows to see other user's profile and see what they are up to and maybe answer some of theirs questions. CNVO was built on AngularFire - AngularJS, Firebase as backend and UIBootstrap and LESS</p>
@@ -90,7 +98,7 @@
             </div>
 
             <div class="item">
-              <img src="assets/nanny-sync.png" alt="Nanny Sync Sanpshot">
+              <img src="assets/nanny-sync.png" alt="Nanny Sync Sanpshot"/>
               <div class="carousel-caption">
                 <h3>Nanny Sync</h3>
                 <p>Nanny Sync makes it easier to keep track of your baby's schedule, such us feeding, sleeping and much more! This app was built on AngularJS and LESS as CSS pre-processor</p>
@@ -99,7 +107,7 @@
             </div>
 
             <div class="item">
-              <img src="assets/todo-rpg.png" alt="TO-DO List Sanpshot">
+              <img src="assets/todo-rpg.png" alt="TO-DO List Sanpshot"/>
               <div class="carousel-caption">
                 <h3>To-Do Task Manager</h3>
                 <p>To Do RPG allows users to make lists of tasks and offer reward when you complete tasks. It is much more like a game so you get your tasks done faster!! The application is powered by Backbone.</p>
@@ -108,7 +116,7 @@
             </div>
 
             <div class="item">
-              <img src="assets/colorclock.png" alt="Color Clock">
+              <img src="assets/colorclock.png" alt="Color Clock"/>
               <div class="carousel-caption">
                 <h3>Color Clock</h3>
                 <p>This clock is not jus any clock. For every minute you will see the background color change. The reason behind that is some magic in the back is converting the hour minute and second to hexadecimal colors. Therfore, each time the clock changes the color will change too!!</p>
@@ -117,7 +125,7 @@
             </div>
 
             <div class="item">
-              <img src="assets/oop.png" alt="OOP Snapshot">
+              <img src="assets/oop.png" alt="OOP Snapshot"/>
               <div class="carousel-caption">
                 <h3>Object Oriented Project</h3>
                 <p>This project was an assignment for The Iron Yard. This is a duplicate of the Honda Dealership. It enphasizes the implementation of Objet Oriented Programming. Visit my Github Account to look at the code!</p>
@@ -125,8 +133,8 @@
               </div>
             </div>
 
-           <div class="item">
-              <img src="assets/tiymockup.png" alt="TIY Mock Up Snapshot">
+            <div class="item">
+              <img src="assets/tiymockup.png" alt="TIY Mock Up Snapshot"/>
               <div class="carousel-caption">
                 <h3>The Iron Yard Front Engineering Website Mock Up</h3>
                 <p>This is a duplicate of The Iron Yard Front End enginerring Website. This represents the ability  to tranlate what you see on a picture into  a web design.</p>
@@ -135,7 +143,7 @@
             </div>
 
             <div class="item">
-              <img src="assets/surfandpaddle.png" alt="Surf & Paddle Snapshot">
+              <img src="assets/surfandpaddle.png" alt="Surf & Paddle Snapshot"/>
               <div class="carousel-caption">
                 <h3>Object Oriented Project</h3>
                 <p>Surf And Paddle is a one of the most popular assignments at the Iron Yard. This page was created by a professionl UI Developer. The purpose is to be able to replicate this page pixel perfet, meaning you version of the page has to look as similar as possible to the original.</p>
@@ -143,42 +151,30 @@
               </div>
             </div>
             
-          </div>
+          </div><!--carousel-inner-->
 
           <!-- Controls -->
-          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+          <a class="left carousel-control" href="#carousel-projects" role="button" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
           </a>
-          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+          <a class="right carousel-control" href="#carousel-projects" role="button" data-slide="next">
             <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
           </a>
-        </div>
+
+        </div><!--carusel-projects-->
       </div><!--.col-sm-12-->
     </div><!--row-->
-    <div class="row" id="contact-me-container">
-      <h3>Contact Me!</h3>
-      <div class="col-sm-6" id="contact-form">
-        <form>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Email address:</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email"/>
-          </div>
-          <div class="form-group"> 
-            <label>Message:</label>
-            <textarea class="form-control" rows="10" placeholder="Enter your message"></textarea>
-          </div>
-          
-          <button type="submit" class="btn btn-default">Submit</button>
-        </form>
-      </div><!--col-sm-6-->
+
+    <div class="row box" id="contact-me-container">
+      <h1>Contact Me!</h1>
 
       <div class="col-sm-6 social-box">
         <div class="row">
           <div class="col-sm-12"><img src="assets/profilepic.png"></div>
+          <div class="col-sm-12"><button class="btn btn-default"><a href="//claudiasresume.azurewebsites.net/" target="blank">Resume</a></button></div>
         </div>
-        <h3>Social Pages</h3>
         <div class="row info">
           <div class="social-container">
             <ul>
@@ -190,11 +186,25 @@
           </div>
         </div>
       </div>
+      <div class="col-sm-6" id="contact-form">
+        <form action="mail.php" method="post">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address:</label>
+            <input type="email" class="form-control" name="InputEmail1" placeholder="Email"/>
+          </div>
+          <div class="form-group"> 
+            <label>Message:</label>
+            <textarea class="form-control" name="inputMessage" rows="10" placeholder="Enter your message"></textarea>
+          </div>
+          
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+      </div><!--col-sm-6-->
 
     </div><!--row-->
   </div><!--container-fluid main-page-->
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script src="libs/bootstrap-3.3.6-dist/js/bootstrap.js"></script>
+  <script src="libs/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
   <script src="index.js"></script>
 </body>
 </html>

@@ -59,39 +59,46 @@
 	margin-top: 7%;
 	display: table;
     margin: 0 auto;
-    color: rgba(92, 195, 105, .5);
+    
+}
+.social-container a{
+	color: rgba(92, 195, 105, .5);
 }
 #passions-container{
 	background-color: rgba(255, 229, 83, .4);/*rgba(255, 164, 83, .6);*/
 	padding:4%;
-	text-align: center;
+	text-align: justify;
 }
-#passions-container h1{
+.box h1{
 	font-size: 4em;
 	font-weight: 800;
-}
-#passions-container p::first-letter {
-  font-weight: bold;
- font-size: 4em;
+	text-align: center;
 }
 #passions-container p:first-letter {
   font-weight: bold;
- font-size: 4em;
+ font-size: 2em;
+}
+#passions-container h2{
+	text-align: center;
 }
 #projects-container{
 	/*background-color: rgba(255, 229, 83, .6);*/
-	padding:2% .3%;
-}
-h3{
-	font-weight: 800;
-	font-size: 1.8em;
-	text-align: center;
+	background-color: rgba(93, 199, 195, .6);
+	padding:4% 1%;
 }
 .carousel{
 	margin-top: 2%;
+	border-style: ridge;
 }
 .carousel .item{
     height: 80vh;
+}
+.carousel-caption{
+	width:100%;
+	background-color: rgba(219, 82, 75, .8);
+	/*rgba(153, 153, 153, .7);*/
+	left:0;
+	padding-top: 0;
 }
 
 .item img {
@@ -102,18 +109,15 @@ h3{
     max-height: 80vh;
     margin: 0 auto;
 }
-.carousel-caption{
-	width:100%;
-	background-color: rgba(219, 82, 75, .8);
-	/*rgba(153, 153, 153, .7);*/
-	left:0;
-	padding-top: 0;
-}
+
 #contact-me-container{
+	background: url(assets/margarita.jpeg) no-repeat center center fixed;
+	background-color: rgba(115, 41, 168, .2);/*rgba(255, 179, 119, .5)*/
 	padding: 2%;
 }
 #contact-me-container img{
-	height: 20vh;
+	margin-bottom: 5px;
+	height: 35vh;
 	display: block;
     margin-left: auto;
     margin-right: auto;
@@ -130,6 +134,10 @@ h3{
 }
 .social-box{
 	padding-top: 2%;
+}
+.social-box button{
+	margin:0 auto;
+    display:block;
 }
 .form-group{
 	padding: 0 7% 3.5% 0;
